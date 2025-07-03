@@ -1,0 +1,242 @@
+.shipping-info {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: "Raleway", sans-serif;
+}
+
+.breadcrumbs {
+  margin-bottom: 40px;
+  font-size: 14px;
+  color: #666;
+}
+
+.breadcrumb-link {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+.breadcrumb-link:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb-active {
+  color: #1D1F22;
+  font-weight: 500;
+}
+
+.shipping-content {
+  display: grid;
+  grid-template-columns: 1fr 400px;
+  gap: 60px;
+  margin-bottom: 40px;
+}
+
+.shipping-form {
+  max-width: 500px;
+}
+
+.shipping-info-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 30px 0 20px 0;
+  color: #1D1F22;
+}
+
+.shipping-info-title:first-of-type {
+  margin-top: 0;
+}
+
+.form-input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #D1D5DB;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: "Raleway", sans-serif;
+  background-color: #FFFFFF;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #4CAF50;
+  box-shadow: 0 0 0 2px rgba(76, 175, 80, 0.1);
+}
+
+.form-input::placeholder {
+  color: #9CA3AF;
+}
+
+.form-group {
+  margin-top: 20px;
+}
+
+.form-group .form-row {
+  display: flex;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.form-row:last-child {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+select.form-input {
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='m6 8 4 4 4-4'/%3e%3c/svg%3e");
+  background-position: right 12px center;
+  background-repeat: no-repeat;
+  background-size: 16px;
+  padding-right: 40px;
+}
+
+.save-info {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #6B7280;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.save-info input[type="checkbox"] {
+  margin: 0;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+.order-summary {
+  background-color: #F9FAFB;
+  padding: 24px;
+  border-radius: 8px;
+  height: fit-content;
+}
+
+.order-item {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.order-item-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 4px;
+  background-color: #E5E7EB;
+}
+
+.order-item-details {
+  flex: 1;
+}
+
+.order-item-name {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0 0 8px 0;
+  color: #1D1F22;
+}
+
+.order-item-price {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+  color: #4CAF50;
+}
+
+.summary-details {
+  border-top: 1px solid #E5E7EB;
+  padding-top: 20px;
+}
+
+.summary-details p {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 12px 0;
+  font-size: 14px;
+  color: #6B7280;
+}
+
+.summary-details p:last-child {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1D1F22;
+  border-top: 1px solid #E5E7EB;
+  padding-top: 12px;
+  margin-top: 12px;
+}
+
+.shipping-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.back-button {
+  color: #4CAF50;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.back-button:hover {
+  text-decoration: underline;
+}
+
+.continue-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: "Raleway", sans-serif;
+}
+
+.continue-button:hover:not(:disabled) {
+  background-color: #45a049;
+}
+
+.continue-button:disabled {
+  background-color: #D1D5DB;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .shipping-info {
+    padding: 40px 16px;
+  }
+  
+  .shipping-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  .form-row:last-child {
+    grid-template-columns: 1fr;
+  }
+  
+  .shipping-actions {
+    flex-direction: column;
+    gap: 16px;
+    align-items: stretch;
+  }
+  
+  .continue-button {
+    order: -1;
+  }
+}

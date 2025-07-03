@@ -1,0 +1,112 @@
+.navbar {
+  align-items: center;
+  padding: 24px 100px;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 32px;
+}
+
+.navbar img {
+  width: 41px;
+  height: 41px;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: #1D1F22;
+  text-transform: uppercase;
+  font-size: 16px;
+  padding-bottom: 28px;
+}
+
+.navbar-link-active {
+  color: #5ECE7B;
+  border-bottom: 2px solid #5ECE7B;
+}
+
+.navbar-actions {
+  display: flex;
+  gap: 22px;
+}
+
+.currency-selector {
+  background: transparent;
+  border: none;
+  font-size: 18px; /* Increased font size */
+  font-weight: 500; /* Medium weight */
+  color: #1D1F22;
+  width: auto; /* Changed from 100% to auto */
+  padding: 8px 28px 8px 8px; /* Added padding */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231D1F22' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  background-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.currency-selector:hover {
+  color: #5ECE7B; /* Green color on hover */
+}
+
+/* For the dropdown options (you'll need to add these to your HTML) */
+.currency-options {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: white;
+  box-shadow: 0px 4px 35px rgba(168, 172, 176, 0.19);
+  padding: 20px 0;
+  min-width: 114px;
+  z-index: 10;
+}
+
+.currency-option {
+  padding: 8px 20px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.currency-option:hover {
+  background-color: #EEEEEE;
+  color: #5ECE7B;
+}
+
+.cart-button {
+  position: relative;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.cart-button img {
+  width: 20px;
+  height: 20px;
+  filter: invert(0.7);
+}
+
+.cart-count {
+  position: absolute;
+  top: 2px;
+  right: -6px;
+  background-color: #1D1F22;
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
